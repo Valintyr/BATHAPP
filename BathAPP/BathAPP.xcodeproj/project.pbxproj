@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		45E2234520018EF400AEB206 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E2234420018EF400AEB206 /* AppDelegate.swift */; };
 		45E2234720018EF400AEB206 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E2234620018EF400AEB206 /* ViewController.swift */; };
 		45E2234A20018EF400AEB206 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45E2234820018EF400AEB206 /* Main.storyboard */; };
 		45E2234D20018EF400AEB206 /* BathAPP.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 45E2234B20018EF400AEB206 /* BathAPP.xcdatamodeld */; };
@@ -15,6 +14,12 @@
 		45E2235220018EF400AEB206 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45E2235020018EF400AEB206 /* LaunchScreen.storyboard */; };
 		45E2235D20018EF400AEB206 /* BathAPPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E2235C20018EF400AEB206 /* BathAPPTests.swift */; };
 		45E2236820018EF400AEB206 /* BathAPPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E2236720018EF400AEB206 /* BathAPPUITests.swift */; };
+		C00FEDF62007F3900073A4FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E2234420018EF400AEB206 /* AppDelegate.swift */; };
+		C00FEDF92007F41B0073A4FC /* BGCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00FEDF82007F41B0073A4FC /* BGCollectionViewController.swift */; };
+		C00FEDFC2007F67C0073A4FC /* BGCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00FEDFB2007F67C0073A4FC /* BGCollectionViewCell.swift */; };
+		C00FEDFE2007F7320073A4FC /* BoardGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00FEDFD2007F7320073A4FC /* BoardGame.swift */; };
+		C00FEE002007F8580073A4FC /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00FEDFF2007F8580073A4FC /* DataSource.swift */; };
+		C00FEE022007F8830073A4FC /* BoardGames.plist in Resources */ = {isa = PBXBuildFile; fileRef = C00FEE012007F8830073A4FC /* BoardGames.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,11 @@
 		45E2236320018EF400AEB206 /* BathAPPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BathAPPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		45E2236720018EF400AEB206 /* BathAPPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BathAPPUITests.swift; sourceTree = "<group>"; };
 		45E2236920018EF400AEB206 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C00FEDF82007F41B0073A4FC /* BGCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BGCollectionViewController.swift; sourceTree = "<group>"; };
+		C00FEDFB2007F67C0073A4FC /* BGCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BGCollectionViewCell.swift; sourceTree = "<group>"; };
+		C00FEDFD2007F7320073A4FC /* BoardGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardGame.swift; sourceTree = "<group>"; };
+		C00FEDFF2007F8580073A4FC /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
+		C00FEE012007F8830073A4FC /* BoardGames.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = BoardGames.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +89,11 @@
 		45E2233820018EF400AEB206 = {
 			isa = PBXGroup;
 			children = (
+				C00FEDFA2007F6690073A4FC /* Cells */,
+				C00FEDF52007F3560073A4FC /* ViewControllers */,
+				C00FEDF42007F2E10073A4FC /* Data */,
+				C00FEDF72007F39A0073A4FC /* Resources */,
+				45E2234420018EF400AEB206 /* AppDelegate.swift */,
 				45E2234320018EF400AEB206 /* BathAPP */,
 				45E2235B20018EF400AEB206 /* BathAPPTests */,
 				45E2236620018EF400AEB206 /* BathAPPUITests */,
@@ -99,11 +114,6 @@
 		45E2234320018EF400AEB206 /* BathAPP */ = {
 			isa = PBXGroup;
 			children = (
-				45E2234420018EF400AEB206 /* AppDelegate.swift */,
-				45E2234620018EF400AEB206 /* ViewController.swift */,
-				45E2234820018EF400AEB206 /* Main.storyboard */,
-				45E2234E20018EF400AEB206 /* Assets.xcassets */,
-				45E2235020018EF400AEB206 /* LaunchScreen.storyboard */,
 				45E2235320018EF400AEB206 /* Info.plist */,
 				45E2234B20018EF400AEB206 /* BathAPP.xcdatamodeld */,
 			);
@@ -126,6 +136,43 @@
 				45E2236920018EF400AEB206 /* Info.plist */,
 			);
 			path = BathAPPUITests;
+			sourceTree = "<group>";
+		};
+		C00FEDF42007F2E10073A4FC /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				C00FEDFD2007F7320073A4FC /* BoardGame.swift */,
+				C00FEDFF2007F8580073A4FC /* DataSource.swift */,
+				C00FEE012007F8830073A4FC /* BoardGames.plist */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		C00FEDF52007F3560073A4FC /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				45E2234620018EF400AEB206 /* ViewController.swift */,
+				C00FEDF82007F41B0073A4FC /* BGCollectionViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C00FEDF72007F39A0073A4FC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				45E2234820018EF400AEB206 /* Main.storyboard */,
+				45E2234E20018EF400AEB206 /* Assets.xcassets */,
+				45E2235020018EF400AEB206 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C00FEDFA2007F6690073A4FC /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				C00FEDFB2007F67C0073A4FC /* BGCollectionViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,6 +285,7 @@
 				45E2235220018EF400AEB206 /* LaunchScreen.storyboard in Resources */,
 				45E2234F20018EF400AEB206 /* Assets.xcassets in Resources */,
 				45E2234A20018EF400AEB206 /* Main.storyboard in Resources */,
+				C00FEE022007F8830073A4FC /* BoardGames.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,9 +310,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C00FEE002007F8580073A4FC /* DataSource.swift in Sources */,
 				45E2234720018EF400AEB206 /* ViewController.swift in Sources */,
+				C00FEDFC2007F67C0073A4FC /* BGCollectionViewCell.swift in Sources */,
+				C00FEDFE2007F7320073A4FC /* BoardGame.swift in Sources */,
 				45E2234D20018EF400AEB206 /* BathAPP.xcdatamodeld in Sources */,
-				45E2234520018EF400AEB206 /* AppDelegate.swift in Sources */,
+				C00FEDF92007F41B0073A4FC /* BGCollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +331,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C00FEDF62007F3900073A4FC /* AppDelegate.swift in Sources */,
 				45E2236820018EF400AEB206 /* BathAPPUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -431,6 +483,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TKST65F37Q;
 				INFOPLIST_FILE = BathAPP/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.etd-studios.BathAPP";
@@ -445,6 +498,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TKST65F37Q;
 				INFOPLIST_FILE = BathAPP/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.etd-studios.BathAPP";
